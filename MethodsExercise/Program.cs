@@ -5,27 +5,55 @@ namespace Method_Exercise
     class Program
     {
         //exercise 2
-        public static int Sum(int x, int y)
+        public static int Plus(int x,int y)
         {
-            var ans1 = x + y;
-            return ans1;
+            var answer = x + y;
+            return answer;
         }
-        public static int Multi(int x, int y)
+
+        public static int Times(int x, int y)
         {
-            var ans2 = x * y;
-            return ans2;
+            var answer = x * y;
+            return answer;
         }
+
+        //use for a preset number of variables that CANNOT change
+
+        //exercise params
+        public static int Add(params int[] list)
+        {
+            int sum = 0;
+            for (int i = 0; i < list.Length; i++)
+            {
+                sum = sum + list[i];
+            }
+            return sum;
+
+            }
+        public static int Multi(params int[] list)
+        { 
+            int times = 1;
+            for (int t = 0; t < list.Length; t++)
+            {
+                times = times * list[t];
+            }
+                return times;
+            
+        }
+        //use for an unknow number of variable, or for more variable than you want to type out a method for. 
         static void Main(string[] args)
         {
             //exercise 1
 
-            var numberOfCars = Sum(3, 9);
-            var numberOfTornadoes = Multi(7, 4);
+            var numberOfCars = Add(3, 9, 4); //uses Method Add from parameters
+            var numberOfTornadoes = Multi(7, 4, 5, 2); //uses Method Multi from parameters
+            var numberOfTeams = Plus(4, 3);
+            var numberOfPlayers = Times(6, 6);
 
             Console.WriteLine(numberOfCars);
-
             Console.WriteLine(numberOfTornadoes);
-
+            Console.WriteLine(numberOfTeams);
+            Console.WriteLine(numberOfPlayers);
             // ask about a players Name and some key stats
             Console.WriteLine("Hello, what player would we like to look into today?");
             var name = Console.ReadLine();
