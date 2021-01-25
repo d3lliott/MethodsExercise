@@ -4,8 +4,29 @@ namespace Method_Exercise
 {
     class Program
     {
+        //exercise 2
+        public static int Sum(int x, int y)
+        {
+            var ans1 = x + y;
+            return ans1;
+        }
+        public static int Multi(int x, int y)
+        {
+            var ans2 = x * y;
+            return ans2;
+        }
+
         static void Main(string[] args)
         {
+            //exercise 1
+
+            var numberOfCars = Sum(3, 9);
+            var numberOfTornadoes = Multi(7, 4);
+
+            Console.WriteLine(numberOfCars);
+
+            Console.WriteLine(numberOfTornadoes);
+
             // ask about a players Name and some key stats
             Console.WriteLine("Hello, what player would we like to look into today?");
             var name = Console.ReadLine();
