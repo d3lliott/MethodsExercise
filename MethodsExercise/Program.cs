@@ -15,7 +15,6 @@ namespace Method_Exercise
             var ans2 = x * y;
             return ans2;
         }
-
         static void Main(string[] args)
         {
             //exercise 1
