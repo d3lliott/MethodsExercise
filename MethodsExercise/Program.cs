@@ -67,7 +67,7 @@ namespace Method_Exercise
             Console.WriteLine("Do they often set up teammates for success with their passing? How many assists do they average?");
             var answer = Console.ReadLine();
             var assists = Console.ReadLine();
-            Console.WriteLine("Now that we can see some raw stats, lets look more in depth. Does this player play 'winning' basketball? What is their PER?");
+            Console.WriteLine("Now that we can see some raw stats, lets look more in depth, to see the relevance of their numbers. What is their PER?");
             var playerPer = int.Parse(Console.ReadLine());
 
             if (playerPer >= 15)
