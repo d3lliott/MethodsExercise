@@ -59,7 +59,7 @@ namespace Method_Exercise
             var name = Console.ReadLine();
             Console.WriteLine("Awesome, " + name + " is a great player! Lets start with their points. What do they score a game?");
             var ppg = Console.ReadLine();
-            Console.WriteLine("Impressive! Now how is " + name + " on the glass?");
+            Console.WriteLine("Impressive! Now lets look at how " + name + " is on the glass. How many rebounds does he get each game?");
             var totreb = Console.ReadLine();
             Console.WriteLine("How many Offensive rebounds? And Defensive?");
             var oreb = Console.ReadLine();
