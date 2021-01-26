@@ -47,11 +47,8 @@ namespace Method_Exercise
 
             var numberOfCars = Add(3, 9, 4, 7, 5, 3, 2, 1); //uses Method Add from parameters
             var numberOfSalesman = Multi(7, 4, 5, 2); //uses Method Multi from parameters
-
-
-
-            var numberOfTeams = Plus(4, 3);
-            var numberOfPlayers = Times(6, 6);
+            var numberOfTeams = Plus(4, 3);// uses Method Plus from Methods
+            var numberOfPlayers = Times(6, 6);//uses Method Times from Methods
 
             Console.WriteLine(numberOfCars);
             Console.WriteLine(numberOfSalesman);
