@@ -67,16 +67,20 @@ namespace Method_Exercise
             Console.WriteLine("Do they often set up teammates for success with their passing? How many assists do they average?");
             var answer = Console.ReadLine();
             var assists = Console.ReadLine();
-            Console.WriteLine("Now that we can see some raw stats, lets look more in depth, to see the relevance of their numbers. What is their PER?");
+            Console.WriteLine("Now that we can see some raw stats, lets look more in depth, to see the relevance of their numbers, and to see if this player is a team player. What is their PER?");
             var playerPer = int.Parse(Console.ReadLine());
 
             if (playerPer >= 15)
             {
                 Console.WriteLine("Yes! This player plays team basketball!");
             }
+            else if (playerPer >= 10)
+            {
+                Console.WriteLine("This player is ok, but needs to work on their team play to be more efficient. Some of their stas are inflatd.");
+            }
             else
             {
-                Console.WriteLine("No, some of these numbers may be empty stats");
+                Console.WriteLine("No, most of these numbers may be empty stats");
             }
 
             Console.WriteLine("So now we have gotten a good look at " + name + ". They average " + ppg + " points, " + totreb + " rebounds, and " + assists + " assists per game. Their per is " + playerPer + ".");
